@@ -78,15 +78,15 @@ const TitanicForm = () => {
 
     let pCLassString = '';
 
-    if(pClassNo === '1') {
+    if(pClassNo === 1) {
 
       pCLassString = 'First Class';
 
-    } else if (pClassNo === '2') {
+    } else if (pClassNo === 2) {
 
       pCLassString = 'Second Class';
 
-    } else if (pClassNo === '3') {
+    } else if (pClassNo === 3) {
 
       pCLassString = 'Third Class';
     
