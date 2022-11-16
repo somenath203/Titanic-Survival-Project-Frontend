@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Box, Flex, Text, FormControl, FormLabel, Input, Select } from '@chakra-ui/react';
+import { useToast } from '@chakra-ui/react'
 import DotLoader from "react-spinners/DotLoader";
 import HashLoader from "react-spinners/HashLoader";
 import swal from '@sweetalert/with-react'
@@ -9,6 +10,8 @@ import './TitanicForm.css';
 
 
 const TitanicForm = () => {
+
+  const toast = useToast();
 
   const [openingLoadingScreen, setOpeningLoadingScreen] = useState(false);
 
@@ -184,7 +187,14 @@ const TitanicForm = () => {
 
       setLoading(false);
 
-      console.log(error);
+      toast({
+        title: 'Server Error',
+        description: "Problem connecting with the server. Try after sometime.",
+        status: 'error',
+        position: 'bottom-center',
+        duration: 8000,
+        isClosable: true,
+      })
 
     }
 
