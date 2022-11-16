@@ -45,6 +45,53 @@ const TitanicForm = () => {
     const noParchNo = Number(noParch);
     const embarkLocNo = Number(embarkLoc);
 
+
+    let embarkLocString = '';
+
+    if(embarkLocNo === 0) {
+
+      embarkLocString = 'Southampton';
+      
+    } else if (embarkLocNo === 1) {
+
+      embarkLocString = 'Cherbourg';
+
+    } else if (embarkLocNo === 2) {
+
+      embarkLocString = 'Queenstown';
+
+    }
+
+
+    let genderString = '';
+
+    if(sexNo === 0) {
+      
+      genderString = 'Male';
+
+    } else if (sexNo === 1) {
+
+      genderString = 'Female';
+
+    }
+
+
+    let pCLassString = '';
+
+    if(pClassNo === '1') {
+
+      pCLassString = 'First Class';
+
+    } else if (pClassNo === '2') {
+
+      pCLassString = 'Second Class';
+
+    } else if (pClassNo === '3') {
+
+      pCLassString = 'Third Class';
+    
+    }
+
     try {
 
       setLoading(true);
@@ -72,7 +119,10 @@ const TitanicForm = () => {
               Full name of the user: {fullName}
             </h4>
             <h4>
-              Class of {fullName} in the ship: {pClass}
+              Gender of {fullName}: {genderString}
+            </h4>
+            <h4>
+              Class of {fullName} in the ship: {pCLassString}
             </h4>
             <h4>
               Total number of siblings/spouse with {fullName} in the ship: {nosbsp}
@@ -81,7 +131,7 @@ const TitanicForm = () => {
               Total number of parent/children with {fullName} in the ship: {noParch}
             </h4>
             <h4>
-              Port of Embarkement of {fullName}: {embarkLoc}
+              Port of Embarkement of {fullName}: {embarkLocString}
             </h4>
 
             <br />
@@ -106,7 +156,10 @@ const TitanicForm = () => {
               Full name of the user: {fullName}
             </h4>
             <h4>
-              Class of {fullName} in the ship: {pClass}
+              Gender of {fullName}: {genderString}
+            </h4>
+            <h4>
+              Class of {fullName} in the ship: {pCLassString}
             </h4>
             <h4>
               Total number of siblings/spouse with {fullName} in the ship: {nosbsp}
@@ -115,7 +168,7 @@ const TitanicForm = () => {
               Total number of parent/children with {fullName} in the ship: {noParch}
             </h4>
             <h4>
-              Port of Embarkement of {fullName}: {embarkLoc}
+              Port of Embarkement of {fullName}: {embarkLocString}
             </h4>
 
             <br />
