@@ -4,3 +4,4 @@ This is a project created with the help of React, Chakra=UI, flask and RandomFor
 
 The code of the backend of this application is present here: https://github.com/somenath203/Titanic-Survival-Project-Backend
 
+

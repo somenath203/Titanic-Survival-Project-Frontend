@@ -34,11 +34,9 @@ const Home = () => {
     <>
       {openingLoadingScreen ? <OpeningSpinner /> : <section className="showcase">
 
-
         <div className="video-container">
           <video src={titanic_video} autoPlay muted loop></video>
         </div>
-
 
         <div className="content">
 

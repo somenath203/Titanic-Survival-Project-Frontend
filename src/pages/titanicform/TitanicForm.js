@@ -29,7 +29,7 @@ const TitanicForm = () => {
 
     setTimeout(() => {
       setOpeningLoadingScreen(false);
-    }, 3000);
+    }, 2500);
 
   }, []);
 
