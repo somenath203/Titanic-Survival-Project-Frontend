@@ -99,7 +99,7 @@ const TitanicForm = () => {
 
       setLoading(true);
 
-      const { data } = await axios.post(process.env.REACT_APP_FLASK_BACKEND_API_URL, {
+      const { data } = await axios.post(process.env.REACT_APP_FASTAPI_BACKEND_API_URL, {
         sexNo,
         pClassNo,
         ageNo,
@@ -188,13 +188,13 @@ const TitanicForm = () => {
       setLoading(false);
 
       toast({
-        title: 'Server Error',
-        description: "Problem connecting with the server. Try after sometime.",
+        title: 'internal Server Error',
+        description: "Problem connecting with the server. Try again after sometime.",
         status: 'error',
         position: 'bottom-center',
         duration: 8000,
         isClosable: true,
-      })
+      });
 
     }
 
