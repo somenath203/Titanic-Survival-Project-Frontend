@@ -259,19 +259,19 @@ const TitanicForm = () => {
             {/* Age */}
             <FormControl mt='8' isRequired>
               <FormLabel>Age</FormLabel>
-              <Input type='number' placeholder='enter your age' onChange={(e) => setAge(e.target.value)} />
+              <Input type='number' placeholder='enter your age' min="1" max="120" onChange={(e) => setAge(e.target.value)} />
             </FormControl>
 
             {/* Siblings/Spouse */}
             <FormControl mt='8' isRequired>
               <FormLabel>Number of Siblings/Spouse</FormLabel>
-              <Input type='number' placeholder='enter the number of siblings/spouse that are with you in the ship' onChange={(e) => setNoSbsp(e.target.value)} />
+              <Input type='number' placeholder='enter the number of siblings/spouse that are with you in the ship' min="0" max="20" onChange={(e) => setNoSbsp(e.target.value)} />
             </FormControl>
 
             {/* Parent/Children */}
             <FormControl mt='8' isRequired>
               <FormLabel>Number of Parent/Children</FormLabel>
-              <Input type='number' placeholder='enter the number of parent/children that are with you in the ship' onChange={(e) => setNoParch(e.target.value)} />
+              <Input type='number' placeholder='enter the number of parent/children that are with you in the ship' min="0" max="20" onChange={(e) => setNoParch(e.target.value)} />
             </FormControl>
 
             {/* Embarked Destination */}
