@@ -122,6 +122,9 @@ const TitanicForm = () => {
               Full name of the user: {fullName}
             </h4>
             <h4>
+              Age of {fullName}: {age}
+            </h4>
+            <h4>
               Gender of {fullName}: {genderString}
             </h4>
             <h4>
@@ -160,6 +163,9 @@ const TitanicForm = () => {
             </h4>
             <h4>
               Gender of {fullName}: {genderString}
+            </h4>
+            <h4>
+              Age of {fullName}: {age}
             </h4>
             <h4>
               Class of {fullName} in the ship: {pCLassString}
