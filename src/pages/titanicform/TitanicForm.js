@@ -142,7 +142,7 @@ const TitanicForm = () => {
 
             <br />
 
-            <h2>CRONGRAGULATIONS {fullName.toLocaleUpperCase()}, YOU HAVE SUCCESSFULLY SRURVIVED THE TITANIC DISASTER ✌️✌️</h2>
+            <h2>CRONGRAGULATIONS {fullName.toLocaleUpperCase()}, YOU HAVE SUCCESSFULLY SURVIVED THE TITANIC DISASTER ✌️✌️</h2>
 
           </div>
         )
@@ -182,7 +182,7 @@ const TitanicForm = () => {
 
             <br />
 
-            <h2>DEAR {fullName.toLocaleUpperCase()}, YOU HAVE NOT SRURVIVED THE TITANIC DISASTER 😥😥</h2>
+            <h2>DEAR {fullName.toLocaleUpperCase()}, YOU HAVE NOT SURVIVED THE TITANIC DISASTER 😥😥</h2>
 
           </div>
         )
